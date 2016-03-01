@@ -528,6 +528,7 @@ input[type="checkbox"]:checked::after{
 }
 
 .about{
+    width: 70%;
     h1{
         text-align: center;
         text-transform: uppercase;
@@ -537,12 +538,22 @@ input[type="checkbox"]:checked::after{
         padding: 1% 0;
     }
     
+    h3{
+        color: #ff3333;
+    }
+    
     .about-text{
         margin: 0 auto;
         padding-bottom: 2%;
-        width: 60%;
         font-size: 130%;
         text-align: justify;
+    }
+    
+    .about-text-2{
+        margin: 0 auto;
+        font-size: 130%;
+        text-align: justify;
+        padding-bottom: 8px;
     }
     
 }
