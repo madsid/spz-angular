@@ -48,16 +48,15 @@ body{
 	font-size: 2em;
 	margin-top: 3%;
 
-	>i{
+	>i, > a{
 		border: 1px solid #fff;
-		border-radius: 50%;
-		width: 40px;
-		height: 40px; 
-		position: relative;
-		top:5px;
-		margin-left:5%;
-		padding-left: 8px;
-		padding-top:6px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-left: 5%;
+        padding-top: 0.5%;
+        text-align: center;
+        display: inline-block !important;
 	  }
 }
 
@@ -186,9 +185,12 @@ input[type="checkbox"]:checked::after{
 #homeview {
 	font-size: 1.2em;
 	background-color: #FFF;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top:-20px;
 
 	.wrapper{
-		background-color: $brand-blue-dark;
+		background-color: #ec7c1f;
 		padding: 2% 0;
 	}
 
@@ -199,7 +201,7 @@ input[type="checkbox"]:checked::after{
 		.active{
 			
 			>a{
-				background-color: $brand-red;
+				background-color: #4A4747;
 				border-bottom: 1px solid #FFF;
 			}	
 		}
@@ -252,14 +254,17 @@ input[type="checkbox"]:checked::after{
                
                button{
                    border-radius: 0px;
-                   background-color: $brand-orange;
+                   background-color: #449d44;
+                   opacity: 0.8;
                    -webkit-transition-duration: 0.3s; /* Safari */
     			   transition-duration: 0.3s;
                    border: none;
+                   padding-bottom: 8px;
                }
                
                button:hover, button:active{
     				background-color: #449d44;
+                    opacity: 1;
     				-webkit-transition-duration: 0.3s; /* Safari */
     				transition-duration: 0.3s;
     			}
@@ -289,11 +294,20 @@ input[type="checkbox"]:checked::after{
 	}
 
 	#appstore{
-		margin: 5% 0;
-		padding-left: 6%;
+        background-color: $brand-yellow;
+        width: 100%;
+        float: left;
+        padding: 5% 14%;
+        
+        h1{
+            text-align: center;
+            margin-top: -4%;
+            padding-bottom: 4%;
+        }
+        
 		img{
 			display: inline-block;
-			margin:0 4%; 
+			/* margin:0 4%; */
 			width: 300px;
 			height: 100px;
 		}
@@ -538,8 +552,20 @@ input[type="checkbox"]:checked::after{
         padding: 1% 0;
     }
     
+    img{
+        margin-bottom:2%;    
+    }
+    
     h3{
-        color: #ff3333;
+        color: #000;
+        font-weight: bold;
+    }
+    
+    h4{
+        color: #555;
+        font-weight: bold;
+        text-decoration: underline;
+        padding-bottom: 1%;
     }
     
     .about-text{
@@ -607,7 +633,7 @@ input[type="checkbox"]:checked::after{
 		padding-bottom: 50px;
 	}
 	#rightfooter{
-		padding-bottom: 52px;
+		padding-bottom: 30px;
 	}
 
 	.mid-bottom{
@@ -635,3 +661,38 @@ input[type="checkbox"]:checked::after{
 		margin-top:3%;
 	}
 }
+
+
+@media (max-width: 768px) {
+    
+  #homeview{
+      #homemenu{
+        margin: 0 15%; 
+        
+        .tab-content{
+            padding: 2% 2% 5% 12%;
+            margin: 0 -6.3% 0 -5.3%;
+        }
+      }
+      
+      #hometodayspecial{
+          background-color:#FFF;
+      }
+      
+      #appstore{
+          margin-left: 0;
+          img{
+            padding:3px;    
+          }
+          
+      }
+      .nav-tabs li{
+          width: 100%; 
+      }
+  }
+    
+}
+
+
+  
+  

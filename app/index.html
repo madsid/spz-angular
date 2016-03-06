@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title> Special Foodz </title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -23,7 +23,7 @@
     <main-header> </main-header>
     
     <div class="container-fluid">
-        <div ng-view=""></div>
+        <div ng-view="" autoscroll="true"></div>
     </div>
     
     <main-footer> </main-footer>
@@ -44,10 +44,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
-        <script src="scripts/directives/footer.js"></script>
+        <script src="scripts/directives/footer.js"></script>    
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/todaySpecial.js"></script>
         <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/team.js"></script>
         <script src="scripts/directives/header.js"></script>
         
         <!-- endbuild -->

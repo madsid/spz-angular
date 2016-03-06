@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('app')
-  .controller('AboutCtrl', function () {
+  .controller('TeamCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

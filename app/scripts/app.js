@@ -1,13 +1,5 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name appApp
- * @description
- * # appApp
- *
- * Main module of the application.
- */
 angular
   .module('app', [
     'ngAnimate',
@@ -48,6 +40,20 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
+      })
+      .when('/team', {
+        templateUrl: 'views/team.html',
+        controller: 'TeamCtrl',
+        controllerAs: 'team'
+      })
+      .when('/privacy', {
+        templateUrl: 'views/privacy.html'
+      })
+      .when('/terms', {
+        templateUrl: 'views/terms.html'
+      })
+      .when('/faq', {
+        templateUrl: 'views/faq.html'
       })
       .otherwise({
         redirectTo: '/'
