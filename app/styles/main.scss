@@ -553,7 +553,8 @@ input[type="checkbox"]:checked::after{
     }
     
     img{
-        margin-bottom:2%;    
+        margin: 0 auto;
+		text-align: center;   
     }
     
     h3{
@@ -582,6 +583,13 @@ input[type="checkbox"]:checked::after{
         padding-bottom: 8px;
     }
     
+}
+
+.team{
+	img{
+		margin: 0 auto; 
+		text-align: center;
+	}
 }
 
 #footer{
@@ -659,6 +667,21 @@ input[type="checkbox"]:checked::after{
 
 	.footer-hiring{
 		margin-top:3%;
+	}
+	
+	.back-to-top{
+		text-align:center;
+		margin:0 auto;
+		
+		img{
+			display:inline;
+			width:100px;
+		}
+		
+		p{
+			display:inline;
+			font-size: 2em;
+		}
 	}
 }
 

@@ -7,6 +7,11 @@ angular.module('app')
             link: function (scope, element, attrs, controllers) {
                 scope.data = "Hello";
             },
-            templateUrl: '../views/footer.html'
+            templateUrl: '../views/footer.html',
+            controller: function($scope,$element) {
+                $scope.backToTop = function () {
+                    $('html, body').animate({ scrollTop: 0 }, 'fast');
+                }
+            }
         };
     });

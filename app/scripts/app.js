@@ -55,6 +55,15 @@ angular
       .when('/faq', {
         templateUrl: 'views/faq.html'
       })
+      .when('/careers', {
+        templateUrl: 'views/careers.html'
+      })
+      .when('/contact', {
+        templateUrl: 'views/contact.html'
+      })
+      .when('/cod', {
+        templateUrl: 'views/cod.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
