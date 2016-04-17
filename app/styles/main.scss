@@ -586,9 +586,80 @@ input[type="checkbox"]:checked::after{
 }
 
 .team{
+	width: 70%; 
 	img{
 		margin: 0 auto; 
 		text-align: center;
+	}
+}
+
+.terms{
+	width: 70%; 
+	h2{
+		text-align: center;
+		text-decoration: underline;
+	}
+	
+	img{
+        margin: 0 auto;
+		text-align: center;   
+    }
+	
+	p{
+		font-size: 120%;
+		text-align: justify;
+	}
+	li{
+		font-size: 120%;
+	}
+}
+
+.careers{
+	width: 70%; 
+	h1{
+		text-align: center;
+		text-decoration: underline;
+	}
+	
+	img{
+        margin: 0 auto;
+		text-align: center;   
+    }
+	
+	p{
+		font-size: 120%;
+		text-align: justify;
+	}
+	li{
+		font-size: 120%;
+	}
+}
+
+.contact, .cod, .faq, .help, .link, .refer, .enquiry, .feedback{
+	width: 70%; 
+	
+	h1{
+		text-align: center;
+		text-decoration: underline;
+	}
+	
+	img{
+        margin: 0 auto;
+		text-align: center; 
+		padding-bottom: 2%;  
+    }
+	
+	p{
+		font-size: 120%;
+		text-align: justify;
+	}
+	li{
+		font-size: 120%;
+	}
+	ul, ol{
+		li{
+			font-size: 100%;
+		}
 	}
 }
 
@@ -682,6 +753,10 @@ input[type="checkbox"]:checked::after{
 			display:inline;
 			font-size: 2em;
 		}
+	}
+	
+	.back-to-top:hover{
+		cursor: pointer;
 	}
 }
 

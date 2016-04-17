@@ -64,6 +64,21 @@ angular
       .when('/cod', {
         templateUrl: 'views/cod.html'
       })
+      .when('/help', {
+        templateUrl: 'views/help.html'
+      })
+      .when('/linkwithus', {
+        templateUrl: 'views/linkwithus.html'
+      })
+      .when('/refer', {
+        templateUrl: 'views/refer.html'
+      })
+      .when('/enquiry', {
+        templateUrl: 'views/enquiry.html'
+      })
+      .when('/feedback', {
+        templateUrl: 'views/feedback.html'
+      })
       .otherwise({
         redirectTo: '/'
       });
