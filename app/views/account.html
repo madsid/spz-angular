@@ -1,0 +1,51 @@
+<div class="account-data">    
+    <div class="form-horizontal">
+        <fieldset>
+
+        <!-- Form Name -->
+        <legend id="account-header">My Account - Update Address</legend>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label"> Username </label>
+            <div class="col-md-4">                     
+                 <p class="col-md-4 account-username"> {{ username }}</p>
+            </div>
+        </div>
+        
+        <!-- Textarea -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="address">New Address</label>
+            <div class="col-md-4">                     
+                <textarea class="form-control" id="address" ng-model="userdata.address" name="address" placeholder="Address"></textarea>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Location">New City</label>  
+            <div class="col-md-4">
+                <input id="Location" name="Location" type="text" placeholder="city" ng-model="userdata.city" class="form-control input-md" required="">
+                
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Zip">New Zip Code</label>  
+            <div class="col-md-4">
+                <input id="Zip" name="Zip" type="text" placeholder="Zip" ng-model="userdata.zip" class="form-control input-md" required="">
+                
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Submit"></label>
+            <div class="col-md-4">
+                <button id="Submit" name="Submit" ng-click="saveData()" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+
+        </fieldset>
+    </div>
+</div>

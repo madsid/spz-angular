@@ -109,7 +109,7 @@ input[type="checkbox"]:checked::after{
 	}
 
 	.positionright{
-		width: 420px;
+		/*width: 420px;*/
 	}
 
 	.accountdisplay{
@@ -173,6 +173,17 @@ input[type="checkbox"]:checked::after{
 	.navbar-brand:hover{
 		background-color: transparent;
 	}
+}
+
+.account-data{
+	#account-header{
+		text-align: center;
+	}
+
+	.account-username{
+		margin-left: -2px; 
+	}
+
 }
 
 .hoteltext{

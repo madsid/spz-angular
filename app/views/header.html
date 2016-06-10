@@ -1,9 +1,10 @@
 ﻿<div id="topheader" class="container-fluid">
     <div class="row">
-        <div class="positionright col-md-3">
+        <div class="positionright col-md-3000000">
             <a class="accountdisplay"> <i class="fa fa-shopping-cart"></i> CART [0] </a>
             <a class="accountdisplay"> <i class="fa fa-heart"></i> WISHLIST </a>
-            <a class="accountdisplay"> <i class="fa fa-lock"></i> LOGIN/SIGNUP </a>
+            <a class="accountdisplay" ng-click="login()" > <i class="fa fa-lock"></i> {{Login}} </a>.
+            <a ng-if="userLogged" href="/#/account" class="accountdisplay" > ACCOUNT </a>
 
         </div>
     </div>

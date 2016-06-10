@@ -40,6 +40,22 @@ angular.module('app')
         
         return deferred.promise;
     }
+
+    service.postAccountDetails = function(userdata){
+        var deferred = $q.defer();
+        
+        $http({
+           method: 'POST',
+           url: baseUrl+'postAccountDetails',
+           data:userdata,
+        }).success(function(data){
+            deferred.resolve(data);
+        }).error(function (data) {
+            deferred.reject('');
+        });
+        
+        return deferred.promise;
+    }
     
     return service;  
   });

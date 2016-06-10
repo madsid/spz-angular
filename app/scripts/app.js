@@ -7,9 +7,10 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ngHello'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, helloProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -46,6 +47,11 @@ angular
         controller: 'TeamCtrl',
         controllerAs: 'team'
       })
+      .when('/account', {
+        templateUrl: 'views/account.html',
+        controller: 'AccountCtrl',
+        controllerAs: 'account'
+      })
       .when('/privacy', {
         templateUrl: 'views/privacy.html'
       })
@@ -81,5 +87,21 @@ angular
       })
       .otherwise({
         redirectTo: '/'
+      });
+      
+      helloProvider.init({
+        facebook:'1092171610855117'
+      });
+  })
+  .run(function ( hello, $window) {
+      
+      hello.on("auth.login", function (r) {
+        hello('facebook').api('me').then(function(json) {
+          $window.localStorage && $window.localStorage.setItem('Login', json.name);  
+        }, function(e) {
+            console.log('Whoops! ' + e.error.message);
+        });
+          
+          console.log(r.authResponse);
       });
   });
